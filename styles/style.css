@@ -13,18 +13,19 @@
     --card-additional-color: #f0b429;
     --main-text-color: #000000;
     --second-text-color: #ffffff;
+    --shadow-color: #b7bec7;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.header,
+/* .header,
 .sidebar,
 .projects,
 .announs-and-trending {
     border: 1px solid red;
-}
+} */
 
 .container {
     min-height: 100vh;
@@ -94,17 +95,28 @@ body {
     text-decoration: none;
 }
 
+
+/* Header */
+
 .header {
+    position: relative;
     grid-column: 2 / span 5;
     grid-row: 1 / span 1;
+    background-color: var(--card-bg-color);
+    box-shadow: 0 3px 6px var(--shadow-color);
 }
+
+
+
 
 .projects {
     grid-column: 2 / span 4;
     grid-row: 2 / span 1;
+    background-color: var(--main-bg-color);
 }
 
 .announs-and-trending {
     grid-column: 6 / span 1;
     grid-row: 2 / span 1;
+    background-color: var(--main-bg-color);
 }
