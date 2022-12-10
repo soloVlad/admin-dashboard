@@ -99,6 +99,11 @@ body {
 /* Header */
 
 .header {
+    padding: 20px clamp(20px, 40px, 40px);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
     position: relative;
     grid-column: 2 / span 5;
     grid-row: 1 / span 1;
@@ -106,6 +111,83 @@ body {
     box-shadow: 0 3px 6px var(--shadow-color);
 }
 
+.container-line {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.button {
+    width: 110px;
+    min-width: 80px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    padding: 12px 0px;
+    color: var(--second-text-color);
+    font-weight: 600;
+}
+
+.header-icon {
+    width: 25px;
+}
+
+.menu,
+.manage {
+    justify-content: flex-end;
+}
+
+.manage {
+    margin-right: 40px;
+}
+
+.manage-user-photo {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.manage-user-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.search-field {
+    background-color: var(--main-bg-color);
+    border: none;
+    border-radius: 15px;
+    line-height: 30px;
+    width: 100%;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.welcome {
+    font-weight: 600;
+}
+
+.welcome-user-photo {
+    width: 100%;
+    border-radius: 50%;
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 1;
+}
+
+.welcome-message {
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+}
+
+.welcome-user-name {
+    font-size: 24px;
+}
 
 
 
