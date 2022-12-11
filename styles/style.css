@@ -190,15 +190,29 @@ body {
 }
 
 
+/* Main */
 
-.projects {
-    grid-column: 2 / span 4;
+.main {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column: 2 / span 5;
     grid-row: 2 / span 1;
     background-color: var(--main-bg-color);
 }
 
-.announs-and-trending {
-    grid-column: 6 / span 1;
-    grid-row: 2 / span 1;
-    background-color: var(--main-bg-color);
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.projects {
+    grid-row: 1 / span 2;
+}
+
+.announs-container {
+    padding: 40px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
 }
