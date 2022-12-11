@@ -13,19 +13,13 @@
     --card-additional-color: #f0b429;
     --main-text-color: #000000;
     --second-text-color: #ffffff;
+    --third-text-color: #7e7e7e;
     --shadow-color: #b7bec7;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-/* .header,
-.sidebar,
-.projects,
-.announs-and-trending {
-    border: 1px solid red;
-} */
 
 .container {
     min-height: 100vh;
@@ -215,4 +209,17 @@ body {
     padding: 40px;
     background-color: var(--card-bg-color);
     border-radius: 10px;
+}
+
+.announs-title {
+    margin-bottom: 5px;
+}
+
+.announs-text {
+    color: var(--third-text-color);
+}
+
+.straight-separator {
+    margin: 20px 0 20px -10px;
+    background-color: var(--third-text-color);
 }
