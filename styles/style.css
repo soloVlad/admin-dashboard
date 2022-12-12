@@ -190,6 +190,8 @@ body {
     padding: 40px 20px;
     display: grid;
     grid-template-columns: 4fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
     grid-column: 2 / span 5;
     grid-row: 2 / span 1;
     background-color: var(--main-bg-color);
@@ -205,7 +207,7 @@ body {
     grid-row: 1 / span 2;
 }
 
-.announs-container {
+.card {
     padding: 40px;
     background-color: var(--card-bg-color);
     border-radius: 10px;
@@ -222,4 +224,43 @@ body {
 .straight-separator {
     margin: 20px 0 20px -10px;
     background-color: var(--third-text-color);
+}
+
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trending-link {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.trending-icon {
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.trending-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.trending-item-descriptor {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--main-text-color);
+}
+
+.trending-item-name {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--third-text-color);
 }
