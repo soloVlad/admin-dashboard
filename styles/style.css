@@ -208,7 +208,7 @@ body {
 }
 
 .card {
-    padding: 40px;
+    padding: 35px;
     background-color: var(--card-bg-color);
     border-radius: 10px;
 }
