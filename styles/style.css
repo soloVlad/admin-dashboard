@@ -207,11 +207,22 @@ body {
     grid-row: 1 / span 2;
 }
 
+.projects-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .card {
     padding: 35px;
     background-color: var(--card-bg-color);
     border-radius: 10px;
 }
+
+.project-action-icon {
+    width: 30px;
+}
+
 
 .announs-title {
     margin-bottom: 5px;
