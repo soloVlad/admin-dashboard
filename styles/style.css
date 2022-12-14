@@ -16,6 +16,8 @@
     --third-text-color: #7e7e7e;
     --shadow-color: #b7bec7;
     --card-accent-color: #f0b429;
+
+    --accent-darker-color: #0b6da2;
 }
 
 body {
@@ -125,6 +127,13 @@ body {
     padding: 12px 0px;
     color: var(--second-text-color);
     font-weight: 600;
+    transition: 0.1s ease-out all;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--accent-darker-color);
+    transform: translate(2px, 2px);
 }
 
 .header-icon {
@@ -293,8 +302,15 @@ body {
 .trending-link {
     display: flex;
     gap: 15px;
+    border-radius: 20px;
     text-decoration: none;
     color: inherit;
+    transition: 0.2s ease-out all;
+}
+
+.trending-link:hover {
+    background-color: var(--main-bg-color);
+    transform: translate(1px, 1px);
 }
 
 .trending-icon {
