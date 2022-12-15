@@ -240,10 +240,6 @@ body {
 
 /* Projects */
 
-.projects {
-    grid-row: 1 / span 2;
-}
-
 .projects-container {
     display: grid;
     gap: 20px;
@@ -304,6 +300,12 @@ body {
     width: 30px;
 }
 
+
+.announs-and-trending {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
 /* Announs */
 
