@@ -197,9 +197,6 @@ body {
     grid-template-rows: 1fr 2fr;
     column-gap: 20px;
     row-gap: 10px;
-}
-
-.welcome {
     font-weight: 600;
 }
 
@@ -369,4 +366,30 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: var(--third-text-color);
+}
+
+@media screen and (max-width: 1120px) {
+    .welcome {
+        grid-template-rows: 1fr 3fr;
+    }
+
+    .welcome-user-photo {
+        grid-row: 1 / span 3;
+    }
+
+    .welcome-message {
+        display: flex;
+        align-items: flex-end;
+        font-size: 14px;
+    }
+
+    .welcome-user-name {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .welcome-user-name {
+        font-size: 18px;
+    }
 }
