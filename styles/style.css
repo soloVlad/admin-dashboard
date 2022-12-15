@@ -254,7 +254,6 @@ body {
     border-radius: 10px;
 }
 
-
 .project {
     padding-bottom: 65px;
     padding-left: 25px;
@@ -263,6 +262,11 @@ body {
     flex-direction: column;
     min-height: 250px;
     border-left: 10px solid var(--card-accent-color);
+    transition: 0.2s ease-out all;
+}
+
+.project:hover {
+    border-left: 10px solid var(--accent-darker-color);
 }
 
 .project-title {
@@ -287,6 +291,11 @@ body {
 
 .project-action {
     text-decoration: none;
+    transition: 0.2s ease-out all;
+}
+
+.project-action:hover {
+    transform: scale(1.2, 1.2);
 }
 
 .project-action-icon {
