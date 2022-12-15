@@ -35,6 +35,11 @@ body {
     align-items: center;
     grid-template-columns: 50px auto;
     grid-column-gap: 15px;
+    transition: 0.2s ease-out all;
+}
+
+.image-link:hover {
+    transform: translate(2px, 2px);
 }
 
 .image-container {
