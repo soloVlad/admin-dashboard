@@ -10,7 +10,6 @@
     --accent-color: #1992d4;
     --card-bg-color: #ffffff;
     --main-bg-color: #e2e8f0;
-    --card-additional-color: #f0b429;
     --main-text-color: #000000;
     --second-text-color: #ffffff;
     --third-text-color: #7e7e7e;
@@ -134,6 +133,18 @@ body {
     cursor: pointer;
     background-color: var(--accent-darker-color);
     transform: translate(2px, 2px);
+}
+
+.header-link-icon {
+    transition: 0.1s ease-out all;
+}
+
+.header-link-icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.header-link-icon:hover>img[src$=".svg"] {
+    filter: invert(50%) sepia(1%) saturate(1818%) hue-rotate(319deg) brightness(89%) contrast(79%);
 }
 
 .header-icon {
